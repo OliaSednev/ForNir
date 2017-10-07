@@ -1,0 +1,57 @@
+.site-footer {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+
+  text-align: center;
+  color: #5e5e5e;
+  height: 110px;
+  width: 100%;
+  background-color: #ececec;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+i {
+  color: #949494;
+  padding: 30px 5px 1px 5px;
+}
+
+i:hover {
+  font-weight: bolder;
+}
+
+.rights-reserved {
+  font-family: Gisha, Arial;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.footer-social {
+  padding-right: 40px;
+}
+
+.footer-social > ul {
+  list-style: none;
+}
+
+.footer-social > li {
+  display: inline-block;
+}
+
+.fa-twitter:hover {
+  color: #00aced;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-dribbble:hover {
+  color: #ff0084;
+}
+
+.fa-instagram:hover {
+  color: #e95950;
+}

@@ -1,0 +1,51 @@
+<div class="content">
+  <div class="portfolio-body">
+    <div class="container">
+
+      <nav class="navbar">
+
+        <div class="row">
+
+          <div class="center-element col-xs-12 col-sm-7 col-md-6 ">
+            <div >
+              <ul class="nav">
+
+                <li class="col-xs-4 col-sm-1 col-md-1 col-lg-1" ><a (click)="showAll()">ALL</a></li>
+                <li class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ><a (click)="filter('BRANDING')">BRANDING</a></li>
+                <li class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ><a (click)="filter('PRINT')">PRINT</a></li>
+                <li class="col-xs-4 col-sm-3 col-md-3 col-lg-3" ><a (click)="filter('PHOTOGRAPHY')">PHOTOGRAPHY</a></li>
+                <li class="col-xs-4 col-sm-2 col-md-2 col-lg-2" ><a (click)="filter('DESIGN')">DESIGN</a></li>
+                <li class="col-xs-4 col-sm-1 col-md-2 col-lg-2" ><a (click)="filter('MOCKUP')">MOCKUP</a></li>
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+
+        <div class="portfolios-display" id="portfoliosdisplay" [class.expanded]="isExpanded">
+          <box [portfolio]="portfolio"
+               *ngFor="let portfolio of filteredPortfolio">
+          </box>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-footer">
+
+    <label class="show-more" (click)="seeMore()" *ngIf="!isExpanded">
+      LOAD MORE WORKS
+    </label>
+    <label class="show-more" (click)="seeLess()" *ngIf="isExpanded">
+      LOAD LESS WORKS
+    </label>
+
+  </div>
+</div>
+
+

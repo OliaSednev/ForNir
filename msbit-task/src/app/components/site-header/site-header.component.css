@@ -1,0 +1,37 @@
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand {
+  width: 75px;
+  padding-top: 11px;
+  padding-left: 0px;
+}
+
+.nav > li > a {
+  padding: 20px 0px 0px 0px;
+  text-align: right;
+  cursor: pointer;
+}
+
+a {
+  color: #999999;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 8px;
+  }
+
+  .nav > li > a {
+    text-align: left;
+  }
+
+  .navbar-brand {
+    width: 58px;
+    padding-top: 24px;
+    padding-left: 0px;
+  }
+}
+
+
